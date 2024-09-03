@@ -49,9 +49,7 @@ function isRateLimited($limitTime = 1) {
 
 When reading the source code, simply, the application takes a POST value from the request and apply the `file_get_contents` function on it.
 
-after that it applies the `substr` function on the string check if the first 5 chars contains `<?php` or `<html`.
-
-if it passes the check then it will print the output else we get `catched` and the app dies, pretty simple.
+after that it compares the first 5 chars if it contains `<?php` or `<html`. If yes then the content will get printed else we get `catched`
 
 ### Analyzing
 
