@@ -171,7 +171,7 @@ And we get the flag :
 
 ![Screenshot (199)](https://github.com/user-attachments/assets/c653bb83-a06c-4f6e-a3b0-2bd837cf7e13)
 
-then we can download the db with any db viewer and get the admin password then access `/admin` :
+then we can download the db and open it with any db viewer and get the admin password then access `/admin` :
 
 ![Screenshot (200)](https://github.com/user-attachments/assets/cbede92c-04ba-4c66-adb9-bd953b3139a2)
 
