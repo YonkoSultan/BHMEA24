@@ -53,7 +53,7 @@ after that it compares the first 5 chars if it contains `<?php` or `<html`. If y
 
 ### Analyzing
 
-If you don't know, `file_get_contents` accepts URI if the `allow_url_fopen` option is allowed which is default. which means we can use `php://` and other protocols.
+If you don't know, `file_get_contents` accepts URI if the `allow_url_fopen` option is allowed which is **default**. which means we can use `php://` and other protocols.
 
 For demonstration :
 
