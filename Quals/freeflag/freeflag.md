@@ -66,7 +66,7 @@ If we do a quick search `add prefix file_get_contents`, we can find an interesti
 ![Screenshot (187)](https://github.com/user-attachments/assets/4409aa22-15e3-47f5-b5f0-99a3328dc470)
 
 
-So this tool simply automate the process of using the `convert.iconv` and `base64` filters to add prefix to our data in `file_get_contents`, you can read more about this interesting exploit in these links :
+So this tool simply automate the process of using the `convert.iconv` and `base64` filters to add prefix to our data in `file_get_contents`, this exploit is called `PHP filter chain`, you can read more about this interesting exploit in these links :
 
 [gynvael](https://gynvael.coldwind.pl/?id=671)
 
