@@ -184,7 +184,7 @@ It would be interpreted in SQL as :
 SELECT note_id,username,note FROM notes WHERE note_id = 66 and secret = `secret` = '1'
 ```
 
-so ```secret = `secret` = 1``` will evaluate to ```true = '1'``` which is always true in MySQL.
+so ```secret = `secret` = '1'``` will evaluate to ```true = '1'``` which is always true in MySQL.
 
 ### Exploiting
 
