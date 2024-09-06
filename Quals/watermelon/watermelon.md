@@ -3,7 +3,7 @@
 I will list here the functions and classes that interests us :
 
 **Path of the database & File Class**
-```
+```PY
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.db' 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -24,7 +24,7 @@ class File(db.Model):
 ```
 
 **Admin check**
-```
+```PY
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -35,7 +35,7 @@ def admin_required(f):
 ```
 
 **Upload function**
-```
+```PY
 @app.route("/upload", methods=["POST"])
 @login_required
 def upload_file():
@@ -72,7 +72,7 @@ def upload_file():
 ```
 
 **File view function**
-```
+```PY
 @app.route("/file/<int:file_id>", methods=["GET"])
 @login_required  
 def view_file(file_id):
@@ -89,7 +89,7 @@ def view_file(file_id):
 ```
 
 **Flag print**
-```
+```PY
 @app.get('/admin')
 @admin_required
 def admin():
@@ -102,7 +102,7 @@ But where is the vulnerability? We can only read the flag if we somehow read the
 
 Looking at these few lines in the upload function :
 
-```
+```PY
         user_dir = os.path.join(app.config['UPLOAD_FOLDER'], str(user_id))
         os.makedirs(user_dir, exist_ok=True)
         
@@ -124,7 +124,7 @@ Then it inserts `file_path` in the database.
 
 We can also access it with it's `id` in the database as stated in File view func :
 
-```
+```PY
 @app.route("/file/<int:file_id>", methods=["GET"])
 @login_required  
 def view_file(file_id):
