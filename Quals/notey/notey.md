@@ -129,7 +129,7 @@ So this application basically have these functionalities :
 
 Also, when starting the program it automatically calls `insertAdminNoteOnce` function, which will insert the flag as a note with a random 32 hex secret in admin account.
 
-To view the a note you need to provide 2 GET parameters : `note_id` & `note_secret`.
+To view a note you need to provide 2 GET parameters : `note_id` & `note_secret`.
 
 So how can we view the flag? Clearly, we can't bruteforce a 32 random bytes secret.
 
