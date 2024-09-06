@@ -175,7 +175,7 @@ Backticks (`) meaning in SQL :
 
 > In MySQL, backticks are special syntax used for encapsulating identifiers like table and column names.
 
-So if `c` was a column name, it will compare all the values in that column with `secret` which would result in `true` ( boolean value ) if at least one value appeared in both columns (c and secret) then compare it with `d`.
+So if `c` was a column name, it will compare all the values in that column with `secret` which would result in `true` ( boolean value ) if at least one value appeared in both columns (c and secret) after that it will compare it with `'d'`.
 
 So if we passed this GET query : `/viewNote?note_id=66&note_secret[secret]=1`
 
